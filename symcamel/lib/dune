@@ -1,0 +1,4 @@
+(library
+ (name symcamel)
+ (public_name symcamel)
+ (modules SymVar SymOps symcamel))

@@ -1,9 +1,18 @@
 # Dijkstra's algorithm 
 
-We are instrested in solving the *single-source shortest-paths problem* in a given $G = (V, E)$ on a wieghted **directed-graph**, with the following constraint that the weights to be *nonnegative* on every edge. 
+We are instrested in solving the *single-source shortest-paths problem* in a given $G = (V, E)$ on a weighted **directed-graph**, with the following constraint that the weights to be *nonnegative* on every edge. 
 $$w(u, v) \geq 0 \quad \text{for each edge } (u, v) \in E$$ 
 
-Dijkstra's algorithm can be viewed as a enhanced implementation of *breadth=first search* to graphs with weights. 
+Dijkstra's algorithm can be viewed as a enhanced implementation of *breadth-first search* to graphs with weights. 
+
+
+```bash
+INITIALIZE-SINGLE-SOURCE(G, s)
+    for each vertex v in G.V
+        v.d = ∞
+        v.π = NIL
+    s.d = 0
+```
 
 ```bash
 INITIALIZE-SINGLE-SOURCE(G, s)
@@ -19,3 +28,5 @@ while Q <> ∅
         if the call of RELAX decreased v.d 
             DECREASE-KEY(Q, v, v,d)
 ```
+
+
