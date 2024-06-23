@@ -1,0 +1,9 @@
+(test
+ (name test_sym_var)
+ (modules test_sym_var)
+ (libraries symcamel ounit2))
+
+(test
+ (name test_sym_ops)
+ (modules test_sym_ops)
+ (libraries symcamel ounit2))

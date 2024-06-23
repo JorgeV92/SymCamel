@@ -1,0 +1,23 @@
+# dune runtest
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/jorgevelez/.cache/dune/db
+# Workspace root: /Users/jorgevelez/Desktop/SymCamel/symcamel
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/Users/jorgevelez/Desktop/SymCamel/symcamel/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /Users/jorgevelez/.opam/cs3110-2023sp/bin/ocamlc.opt -config > /var/folders/jq/56jhcq117sl09hsljm5qmtpc0000gp/T/dune_ded9b1_output

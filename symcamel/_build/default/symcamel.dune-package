@@ -1,0 +1,59 @@
+(lang dune 3.12)
+(name symcamel)
+(sections (lib .) (libexec .) (bin ../../bin))
+(files
+ (lib
+  (META
+   SymVar.ml
+   SymVar.mli
+   dune-package
+   opam
+   sym_ops.ml
+   sym_ops.mli
+   symcamel.a
+   symcamel.cma
+   symcamel.cmi
+   symcamel.cmt
+   symcamel.cmx
+   symcamel.cmxa
+   symcamel.ml
+   symcamel__SymVar.cmi
+   symcamel__SymVar.cmt
+   symcamel__SymVar.cmti
+   symcamel__SymVar.cmx
+   symcamel__Sym_ops.cmi
+   symcamel__Sym_ops.cmt
+   symcamel__Sym_ops.cmti
+   symcamel__Sym_ops.cmx))
+ (libexec (symcamel.cmxs))
+ (bin (symcamel)))
+(library
+ (name symcamel)
+ (kind normal)
+ (archives (byte symcamel.cma) (native symcamel.cmxa))
+ (plugins (byte symcamel.cma) (native symcamel.cmxs))
+ (native_archives symcamel.a)
+ (main_module_name Symcamel)
+ (modes byte native)
+ (modules
+  (wrapped
+   (group
+    (alias
+     (obj_name symcamel)
+     (visibility public)
+     (kind alias)
+     (source (path Symcamel) (impl (path symcamel.ml-gen))))
+    (name Symcamel)
+    (modules
+     (module
+      (obj_name symcamel__SymVar)
+      (visibility public)
+      (source (path SymVar) (intf (path SymVar.mli)) (impl (path SymVar.ml))))
+     (module
+      (obj_name symcamel__Sym_ops)
+      (visibility public)
+      (source
+       (path Sym_ops)
+       (intf (path sym_ops.mli))
+       (impl (path sym_ops.ml))))))
+   (wrapped true))))

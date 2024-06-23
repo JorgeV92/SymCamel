@@ -1,0 +1,30 @@
+lib: [
+  "_build/install/default/lib/symcamel/META"
+  "_build/install/default/lib/symcamel/SymVar.ml"
+  "_build/install/default/lib/symcamel/SymVar.mli"
+  "_build/install/default/lib/symcamel/dune-package"
+  "_build/install/default/lib/symcamel/opam"
+  "_build/install/default/lib/symcamel/sym_ops.ml"
+  "_build/install/default/lib/symcamel/sym_ops.mli"
+  "_build/install/default/lib/symcamel/symcamel.a"
+  "_build/install/default/lib/symcamel/symcamel.cma"
+  "_build/install/default/lib/symcamel/symcamel.cmi"
+  "_build/install/default/lib/symcamel/symcamel.cmt"
+  "_build/install/default/lib/symcamel/symcamel.cmx"
+  "_build/install/default/lib/symcamel/symcamel.cmxa"
+  "_build/install/default/lib/symcamel/symcamel.ml"
+  "_build/install/default/lib/symcamel/symcamel__SymVar.cmi"
+  "_build/install/default/lib/symcamel/symcamel__SymVar.cmt"
+  "_build/install/default/lib/symcamel/symcamel__SymVar.cmti"
+  "_build/install/default/lib/symcamel/symcamel__SymVar.cmx"
+  "_build/install/default/lib/symcamel/symcamel__Sym_ops.cmi"
+  "_build/install/default/lib/symcamel/symcamel__Sym_ops.cmt"
+  "_build/install/default/lib/symcamel/symcamel__Sym_ops.cmti"
+  "_build/install/default/lib/symcamel/symcamel__Sym_ops.cmx"
+]
+libexec: [
+  "_build/install/default/lib/symcamel/symcamel.cmxs"
+]
+bin: [
+  "_build/install/default/bin/symcamel"
+]

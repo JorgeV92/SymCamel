@@ -1,0 +1,6 @@
+description = ""
+requires = ""
+archive(byte) = "symcamel.cma"
+archive(native) = "symcamel.cmxa"
+plugin(byte) = "symcamel.cma"
+plugin(native) = "symcamel.cmxs"
